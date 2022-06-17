@@ -116,7 +116,7 @@ button {
 .header {
   position: absolute;
   width: 100%;
-  z-index: 5;
+  z-index: 10;
   background-color: transparent;
 }
 
@@ -297,7 +297,7 @@ button {
     position: fixed;
     top: 0;
     right: 0;
-    width: 254px;
+    width: 50vw;
     height: 100vh;
     padding: 60px 0px;
     background-color: #e17992;
@@ -741,7 +741,7 @@ button {
   padding: 0px;
   right: 30px;
   display: none;
-  z-index: 99991;
+  z-index: 6;
 }
 
 .back-top a {
@@ -2383,17 +2383,17 @@ button {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .slider3 {
+  .slider-three {
     top: 52px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1249px) {
-  .slider3 {
+  .slider-three {
     top: 20px;
   }
 }
 @media screen and (min-width: 1250px) {
-  .slider3 {
+  .slider-three {
     top: 18px;
   }
 }
@@ -2572,16 +2572,16 @@ button {
   margin-top: 0;
 }
 
-.slider3 .slick-dots {
+.slider-three .slick-dots {
   bottom: inherit;
 }
 
-.slider3 .slick-dots li {
+.slider-three .slick-dots li {
   width: 18px;
   height: 18px;
 }
 
-.slider3 .slick-dots li button {
+.slider-three .slick-dots li button {
   width: 12px;
   height: 12px;
   background-color: #d9d9d9;
@@ -2589,7 +2589,7 @@ button {
   padding: 0;
 }
 
-.slider3 .slick-dots li button {
+.slider-three .slick-dots li button {
   width: 12px;
   height: 12px;
   background-color: #d9d9d9;
@@ -2597,7 +2597,7 @@ button {
   padding: 0;
 }
 
-.slider3 .slick-dots .slick-active button {
+.slider-three .slick-dots .slick-active button {
   width: 12px;
   height: 12px;
   padding: 0;
@@ -2609,15 +2609,15 @@ button {
   background-color: none;
 }
 
-.slider3 .slick-active button::before {
+.slider-three .slick-active button::before {
   display: none;
 }
 
-.slider3 .slick-dots {
+.slider-three .slick-dots {
   margin-top: 10px;
 }
 
-.slider3 .slick-dots li button::before {
+.slider-three .slick-dots li button::before {
   display: none;
 }
 
@@ -2936,7 +2936,7 @@ button {
 
 .backdrop {
   position: fixed;
-  z-index: 3;
+  z-index: 11;
   top: 0;
   left: 0;
   width: 100%;
