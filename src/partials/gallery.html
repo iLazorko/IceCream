@@ -1,28 +1,87 @@
-<section class="gallery-main " id="picture">
-    <div class="container gallery">
-            <h2 class="visually-hidden">Gallery</h2>
-        <div class="gallery__content">
-            <img class="gallery__img" src="./images/gallery/one.jpg" alt="">
-            </div>
-        <div class="gallery__content">
-            <img class="gallery__img" src="./images/gallery/two.jpg" alt="" >
-            <img class="gallery__img gallery__img-top" src="./images/gallery/seven.jpg" alt="" >
-            </div>
-        <div class="gallery__content gallery__content-three">
-            <img class="gallery__img gallery__img-big" src="./images/gallery/three.jpg" alt="">
-            <img class="gallery__img gallery__img-top" src="./images/gallery/eight.jpg" alt="" >
-            </div>
-        <div class="gallery__content gallery__content-four">
-            <img class="gallery__img" src="./images/gallery/foure.jpg" alt="" >
-            <img class="gallery__img gallery__img-top" src="./images/gallery/nine.jpg" alt="" >
-            </div>
-        <div class="gallery__content gallery__content-five">
-            <img class="gallery__img" src="./images/gallery/five.jpg" alt="">
-            <img class="gallery__img gallery__img-top" src="./images/gallery/ten.jpg" alt="" >
-            </div>
-        <div class="gallery__content gallery__content-six">
-            <img class="gallery__img" src="./images/gallery/six.jpg" alt="" >
-            </div>
+<section class="gallery-main" id="picture">
+  <div class="container gallery">
+    <h2 class="visually-hidden">Gallery</h2>
+    <div class="gallery__content">
+      <picture>
+        <source srcset="./images/gallery/web/one.webp 1x" type="image/webp" />
+        <source srcset="./images/gallery/one.jpg 1x" type="image/jpeg" />
+        <img src="./images/gallery/one.jpg" alt="" class="gallery__img" />
+      </picture>
     </div>
-
+    <div class="gallery__content">
+      <picture>
+        <source srcset="./images/gallery/web/two.webp 1x" type="image/webp" />
+        <source srcset="./images/gallery/two.jpg 1x" type="image/jpeg" />
+        <img src="./images/gallery/two.jpg" alt="" class="gallery__img" />
+      </picture>
+      <picture>
+        <source srcset="./images/gallery/web/seven.webp 1x" type="image/webp" />
+        <source srcset="./images/gallery/seven.jpg 1x" type="image/jpeg" />
+        <img
+          src="./images/gallery/seven.jpg"
+          alt=""
+          class="gallery__img gallery__img-top"
+        />
+      </picture>
+    </div>
+    <div class="gallery__content gallery__content-three">
+      <picture>
+        <source srcset="./images/gallery/web/three.webp 1x" type="image/webp" />
+        <source srcset="./images/gallery/three.jpg 1x" type="image/jpeg" />
+        <img
+          src="./images/gallery/three.jpg"
+          alt=""
+          class="gallery__img gallery__img-big"
+        />
+      </picture>
+      <picture>
+        <source srcset="./images/gallery/web/eight.webp 1x" type="image/webp" />
+        <source srcset="./images/gallery/eight.jpg 1x" type="image/jpeg" />
+        <img
+          src="./images/gallery/eight.jpg"
+          alt=""
+          class="gallery__img gallery__img-top"
+        />
+      </picture>
+    </div>
+    <div class="gallery__content gallery__content-four">
+      <picture>
+        <source srcset="./images/gallery/web/foure.webp 1x" type="image/webp" />
+        <source srcset="./images/gallery/foure.jpg 1x" type="image/jpeg" />
+        <img src="./images/gallery/foure.jpg" alt="" class="gallery__img" />
+      </picture>
+      <picture>
+        <source srcset="./images/gallery/web/nine.webp 1x" type="image/webp" />
+        <source srcset="./images/gallery/nine.jpg 1x" type="image/jpeg" />
+        <img
+          src="./images/gallery/nine.jpg"
+          alt=""
+          class="gallery__img gallery__img-top"
+        />
+      </picture>
+    </div>
+    <div class="gallery__content gallery__content-five">
+      <picture>
+        <source srcset="./images/gallery/web/five.webp 1x" type="image/webp" />
+        <source srcset="./images/gallery/five.jpg 1x" type="image/jpeg" />
+        <img src="./images/gallery/five.jpg" alt="" class="gallery__img" />
+      </picture>
+      <picture>
+        <source srcset="./images/gallery/web/ten.webp 1x" type="image/webp" />
+        <source srcset="./images/gallery/ten.jpg 1x" type="image/jpeg" />
+        <img
+          src="./images/gallery/ten.jpg"
+          alt=""
+          class="gallery__img gallery__img-top"
+        />
+      </picture>
+    </div>
+    <div class="gallery__content gallery__content-six">
+      <picture>
+        <source srcset="./images/gallery/web/six.webp 1x" type="image/webp" />
+        <source srcset="./images/gallery/six.jpg 1x" type="image/jpeg" />
+        <img src="./images/gallery/six.jpg" alt="" class="gallery__img" />
+      </picture>
+    </div>
+  </div>
 </section>
