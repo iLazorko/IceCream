@@ -1,0 +1,232 @@
+<section id="contacts" class="contacts section">
+  <div class="contacts__container container">
+    <h2 class="contacts__title visually-hidden">Contacts</h2>
+    <div class="contacts__body">
+      <ul class="contacts__list list-contacts">
+        <li class="list-contacts__item">
+          <span class="list-contacts__category list-contacts__category--beige">
+            CAFE
+          </span>
+          <div class="list-contacts__location">
+            <h3 class="list-contacts__title">Chicago</h3>
+            <p class="list-contacts__text">
+              Fusce ut velit laoreet, tempus arcu molestie vulputate
+            </p>
+          </div>
+          <ul class="list-contacts__shedule shedule">
+            <li class="shedule__item">
+              <span class="shedule__days">Monday - Friday</span>
+              <span class="shedule__time">06:00 AM - 10:00 PM</span>
+            </li>
+            <li class="shedule__item">
+              <span class="shedule__days">Saturday - Sunday</span>
+              <span class="shedule__time">08:00 AM - 16:00 PM</span>
+            </li>
+          </ul>
+          <ul class="list-contacts__links links-contacts">
+            <li class="links-contact__item">
+              <a href="tel:+610383766284" class="link">+61(0) 383 766 284</a>
+            </li>
+            <li class="links-contact__item">
+              <a href="mailto:noreply@envato.com" class="link"
+                >noreply@envato.com</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="list-contacts__item">
+          <span class="list-contacts__category list-contacts__category--green">
+            FOOD TRUCK
+          </span>
+          <div class="list-contacts__location">
+            <h3 class="list-contacts__title">Los Angeles</h3>
+            <p class="list-contacts__text">
+              Fusce ut velit laoreet, tempus arcu molestie vulputate
+            </p>
+          </div>
+          <ul class="list-contacts__shedule shedule">
+            <li class="shedule__item">
+              <span class="shedule__days">Monday - Friday</span>
+              <span class="shedule__time">06:00 AM - 10:00 PM</span>
+            </li>
+            <li class="shedule__item">
+              <span class="shedule__days">Saturday - Sunday</span>
+              <span class="shedule__time">08:00 AM - 16:00 PM</span>
+            </li>
+          </ul>
+          <ul class="list-contacts__links links-contacts">
+            <li class="links-contact__item">
+              <a href="tel:+610383766284" class="link">+61(0) 383 766 284</a>
+            </li>
+            <li class="links-contact__item">
+              <a href="mailto:noreply@envato.com" class="link"
+                >noreply@envato.com</a
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li class="list-contacts__item">
+          <span class="list-contacts__category list-contacts__category--beige">
+            CAFE
+          </span>
+
+          <div class="list-contacts__location">
+            <h3 class="list-contacts__title">New York</h3>
+            <p class="list-contacts__text">
+              Fusce ut velit laoreet, tempus arcu molestie vulputate
+            </p>
+          </div>
+          <ul class="list-contacts__shedule shedule">
+            <li class="shedule__item">
+              <span class="shedule__days">Monday - Friday</span>
+              <span class="shedule__time">06:00 AM - 10:00 PM</span>
+            </li>
+            <li class="shedule__item">
+              <span class="shedule__days">Saturday - Sunday</span>
+              <span class="shedule__time">08:00 AM - 16:00 PM</span>
+            </li>
+          </ul>
+          <ul class="list-contacts__links links-contacts">
+            <li class="links-contact__item">
+              <a href="tel:+610383766284" class="link">+61(0) 383 766 284</a>
+            </li>
+            <li class="links-contact__item">
+              <a href="mailto:noreply@envato.com" class="link"
+                >noreply@envato.com</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="contacts__buttons">
+      <button
+        type="button"
+        class="contacts__button button button--red js-location-modal-open"
+      >
+        Our Locations
+        <svg class="button__icon">
+          <use href="./images/sprite.svg#icon-arrow"></use>
+        </svg>
+      </button>
+      <button
+        type="button"
+        class="contacts__button button button--white js-franchise-modal-open"
+      >
+        Franchise
+        <svg class="button__icon">
+          <use href="./images/sprite.svg#icon-arrow"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+<div class="backdrop is-hidden js-location-modal">
+  <div class="modal modal-location">
+    <button type="button" class="close-button js-location-modal-close"></button>
+    <div class="modal-location__body">
+      <span class="modal-location__title">Location</span>
+      <address class="modal-location__address address-location">
+        <ul class="address-location__list">
+          <li class="address-location__item">
+            <p>UCLA Department or Residence Hal</p>
+          </li>
+          <li class="address-location__item"><p>5555 Campus Hall</p></li>
+          <li class="address-location__item"><p>Los Angeles, CA 90024</p></li>
+        </ul>
+      </address>
+    </div>
+    <div id="map" class="modal-location__map"></div>
+    <script>
+      function myMap() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(51.5, -0.2),
+          zoom: 10,
+        };
+        var map = new google.maps.Map(mapCanvas, mapOptions);
+      }
+    </script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=&callback=myMap"
+      async
+      defer
+    ></script>
+  </div>
+</div>
+<div class="backdrop is-hidden js-franchise-modal">
+  <div class="modal modal-franchise">
+    <button
+      type="button"
+      class="close-button js-franchise-modal-close"
+    ></button>
+    <div class="modal-franchise__container">
+      <strong class="modal-franchise__title">
+        Request Franchise Information
+      </strong>
+      <form class="modal-franchise__form" autocomplete="off">
+        <div class="modal-franchise__base">
+          <div class="modal-franchise__full-name">
+            <label class="modal-franchise__field">
+              <span class="modal-franchise__label">First Name</span>
+              <input
+                type="text"
+                name="name"
+                class="modal-franchise__input"
+                placeholder="John"
+              />
+            </label>
+            <label class="modal-franchise__field">
+              <span class="modal-franchise__label">Last Name</span>
+              <input
+                type="text"
+                name="name"
+                class="modal-franchise__input"
+                placeholder="Smith"
+              />
+            </label>
+          </div>
+          <div class="modal-franchise__contacts-info">
+            <label class="modal-franchise__field">
+              <span class="modal-franchise__label">Phone number</span>
+              <input
+                type="tel"
+                name="text"
+                class="modal-franchise__input"
+                placeholder="+1 212-674-5377"
+              />
+            </label>
+            <label class="modal-franchise__field">
+              <span class="modal-franchise__label">E-Mail</span>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="modal-franchise__input"
+                placeholder="email@email.com"
+              />
+            </label>
+          </div>
+          <label class="modal-franchise__field">
+            <span class="modal-franchise__label">Leave your message</span>
+            <textarea
+              name="comment"
+              id="comment-franchise"
+              rows="10"
+              placeholder="Tell us about yourself"
+              class="modal-franchise__text-area"
+            ></textarea>
+          </label>
+        </div>
+        <button
+          type="submit"
+          class="button button--white modal-franchise__button"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+    <div class="modal-franchise__body"></div>
+  </div>
+</div>
